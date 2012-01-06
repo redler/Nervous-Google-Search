@@ -1,7 +1,7 @@
 javascript: (function() {
     var byClass = [
-        ['mitem', 20],
-        ['g', 10]
+            ['mitem', 20], // number is the magnitude of the "vibration" in degrees
+            ['g', 10]
         ],
         byId = [
             [ 'gbqff', 10 ], // search fieldset
@@ -16,7 +16,7 @@ javascript: (function() {
         ],
         byTag = [
             ['body', 4]
-            ],
+        ],
         a, b, 
         nervify = function nervify (el, check, embignitude) {
             var e = embignitude || 6;
