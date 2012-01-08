@@ -4,9 +4,10 @@ javascript: (function() {
             ['g', 10]
         ],
         byId = [
-            [ 'gbqff', 10 ], // search fieldset
-            [ 'gbql', 360 ], // logo
-            [ 'gbqfb', 100 ], // button
+            ['gbqff', 10], // search fieldset
+            ['gbq1', 360], // logo, doodle
+            ['gbql', 360], // logo
+            ['gbqfb', 100], // button
             ['center_col', 6],
             ['appbar', 6],
             ['navcnt', 100], // Goooooogle
@@ -19,8 +20,8 @@ javascript: (function() {
         ],
         a, b, 
         nervify = function nervify (el, check, embignitude) {
-            var e = embignitude || 6;
-            typeof el.style === 'undefined' || (el.style.webkitTransition = '');
+            var e = embignitude || 6; 
+            try { el.style.webkitTransition = ''; } catch(e) { return; }
             (function(lel) {
                 var m = setInterval(function() {
                     var x = Math.floor(Math.random() * e) / 2 - (e / 4),
