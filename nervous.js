@@ -66,4 +66,4 @@ javascript: (function() {
     } else {
         alert('Only works if you\'re nervous');
     }
-})()
+}());
