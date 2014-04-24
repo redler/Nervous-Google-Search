@@ -1,6 +1,7 @@
 javascript: (function() {
     var byClass = [
             ['mitem', 20], // number is the magnitude of the "vibration" in degrees
+            ['hdtb_mitem', 20],
             ['g', 10]
         ],
         byId = [
